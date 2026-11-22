@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+        content="SafePath: navegación adaptada, rutas accesibles en tiempo real y asistencia guiada por voz para evacuaciones seguras e inclusivas.">
+    <meta name="author" content="NovaTeam – UPC">
+    <meta name="keywords" content="SafePath, accesibilidad, evacuación, adultos mayores, rutas accesibles, emergencias">
+    <title>SafePath – Tu camino seguro en emergencias</title>
+    <link rel="icon" href="favicon.ico" sizes="any">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="assets/styles/styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="wrap">
+            <div class="brand"><svg class="logo" role="img" aria-label="SafePath" width="60" height="56"
+                    viewBox="22 14 84 78" xmlns="http://www.w3.org/2000/svg">
+                    <title>SafePath</title>
+                    <path
+                        d="M62 54C70 52 78 53 77 57C76 60 68 59 66.5 61C65 63 76 63.5 77 66.5C77.5 70 66 71 60 70C53 69 49 66 50.5 63C52 59 58 58 62 56Z"
+                        fill="#379974" />
+                    <path d="M64 58L52.07 44.66A16 16 0 1 1 75.93 44.66Z" fill="#379974" />
+                    <circle cx="64" cy="34" r="11.3" fill="#ffffff" />
+                    <g fill="none" stroke="#0e465d" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M62.3 30.5V38.5H69L71.5 43.5M62.3 33.5H67" />
+                        <path d="M58.3 35A6 6 0 1 0 67.8 41.5" />
+                    </g>
+                    <circle cx="65.2" cy="26.6" r="2.3" fill="#0e465d" />
+                    <text x="25" y="86" textLength="78" lengthAdjust="spacingAndGlyphs"
+                        font-family="Poppins,Inter,Arial,sans-serif" font-weight="700" font-size="17">
+                        <tspan fill="#0e465d">Safe</tspan>
+                        <tspan fill="#379974">Path</tspan>
+                    </text>
+                </svg></div>
+            <nav aria-label="Principal">
+                <a href="#inicio">Inicio</a>
+                <a href="#sobre">Sobre SafePath</a>
+                <a href="#funciones">Funcionalidades</a>
+                <a href="#preguntas">Preguntas</a>
+                <a href="#contacto">Contacto</a>
+            </nav>
+        </div>
+    </header>
+
+    <main id="inicio">
+        <div class="hero">
+            <div class="wrap">
+                <div>
+                    <h1>Tu camino seguro en emergencias</h1>
+                    <p>
+                        Navegación adaptada, rutas accesibles en tiempo real y asistencia guiada por voz para garantizar
+                        evacuaciones seguras e inclusivas para todos.
+                    </p>
+                    <a class="btn" href="#tiendas">Descargar SafePath
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5"
+                            stroke-linecap="round" aria-hidden="true">
+                            <path d="M12 4v11m0 0l-4-4m4 4l4-4M5 20h14" />
+                        </svg>
+                    </a>
+                    <div class="stores" id="tiendas">
+                        <span class="stores-label">Disponible en:</span>
+                        <div class="stores-row">
+                            <a href="#" aria-label="Descargar SafePath en App Store">
+                                <img src="assets/images/app-store.png" alt="Disponible en App Store">
+                            </a>
+                            <a href="#" aria-label="Descargar SafePath en Google Play">
+                                <img src="assets/images/google-play.png" alt="Disponible en Google Play">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="mock">
+                    <div class="phone" role="img" aria-label="Pantalla de la app SafePath con una ruta de evacuación">
+                        <div class="ph-head">
+                            <div class="ph-island"></div>
+                            <div class="ph-status"><span>9:41</span>
+                                <svg width="30" height="10" viewBox="0 0 30 10" fill="#fff">
+                                    <rect x="0" y="6" width="3" height="4" rx="1" />
+                                    <rect x="5" y="4" width="3" height="6" rx="1" />
+                                    <rect x="10" y="2" width="3" height="8" rx="1" />
+                                    <rect x="16" y="1" width="13" height="8" rx="2.5" fill="none" stroke="#fff" />
+                                    <rect x="18" y="3" width="8" height="4" rx="1" />
+                                </svg>
+                            </div>
+                            <div class="ph-title"><span class="ph-avatar"></span>
+                                <svg width="10" height="12" viewBox="0 0 10 12" fill="#fff">
+                                    <path d="M5 12L1 6.5a5 5 0 1 1 8 0z" />
+                                </svg>SafePath
+                            </div>
+                        </div>
+                        <div class="ph-map">
+                            <svg class="m" viewBox="0 0 208 244" aria-hidden="true">
+                                <polygon points="0,0 70,0 56,44 0,66" fill="#cfe6cf" />
+                                <polygon points="0,160 26,150 40,244 0,244" fill="#cfe6cf" />
+                                <g stroke="#fff" fill="none" stroke-linecap="round">
+                                    <path d="M0 105L208 15M0 150L208 60M0 195L208 105M0 240L208 150" stroke-width="6" />
+                                    <path d="M40 0L130 244M95 0L185 244M150 0L208 150" stroke-width="6" />
+                                    <path
+                                        d="M0 70L130 12M0 125L208 35M0 170L208 80M0 215L208 128M70 0L160 244M120 0L208 230M10 0L60 120"
+                                        stroke-width="2.5" />
+                                </g>
+                                <polyline points="85,73 115,88 131,127 71,160 104,221 135,196" fill="none"
+                                    stroke="#108a8c" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M85 74L79.5 66A7 7 0 1 1 90.5 66Z" fill="#108a8c" />
+                                <circle cx="85" cy="62" r="2.6" fill="#fff" />
+                                <circle cx="135" cy="196" r="10" fill="#108a8c" stroke="#fff" stroke-width="2" />
+                                <circle cx="135" cy="196" r="3" fill="#fff" />
+                            </svg>
+                            <div class="ph-search"><i></i>Mi ubicación</div>
+                            <div class="ph-tag">Punto seguro</div>
+                            <div class="ph-tools">
+                                <span>
+                                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#5b6b78"
+                                        stroke-width="2.4" stroke-linecap="round">
+                                        <path d="M4 20l4-1 11-11-3-3L5 16z" />
+                                    </svg>
+                                </span>
+                                <span>
+                                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#5b6b78"
+                                        stroke-width="2.4" stroke-linecap="round">
+                                        <circle cx="6" cy="18" r="2" />
+                                        <circle cx="18" cy="6" r="2" />
+                                        <path d="M8 18h6a3 3 0 0 0 0-6h-4a3 3 0 0 1 0-6h6" />
+                                    </svg>
+                                </span>
+                            </div>
+                            <div class="ph-fab">
+                                <svg width="12" height="12" viewBox="0 0 24 24" fill="#108a8c">
+                                    <path d="M12 2l7 19-7-4-7 4z" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="ph-sheet">
+                            <div class="ph-handle"></div>
+                            <div class="ph-alert"><i></i>Alertas de voz</div>
+                            <div class="ph-go">Iniciar evacuación</div>
+                        </div>
+                        <div class="ph-home"></div>
+                    </div>
+                    <small>Ruta de evacuación accesible, con alertas de voz en tiempo real</small>
+                </div>
+            </div>
+        </div>
+
+        <div class="band" id="sobre">
+            <div class="wrap">
+                <h2>Sobre SafePath</h2>
+                <p class="intro">
+                    SafePath es una aplicación móvil que facilita la evacuación de adultos mayores con
+                    discapacidad o movilidad reducida, y de sus familiares o cuidadores, durante sismos, incendios e
+                    inundaciones. Combina geolocalización, accesibilidad y rutas personalizadas para orientar mejor y
+                    reducir retrasos cuando cada minuto cuenta.
+                </p>
+                <div class="cards about">
+                    <div class="card">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" stroke="#108a8c" stroke-width="3"
+                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="M20 5L37 34H3z" />
+                            <path d="M20 16v9" />
+                            <circle cx="20" cy="30" r="1" fill="#108a8c" />
+                        </svg>
+                        <h3>El problema</h3>
+                        <p>
+                            En una emergencia, muchas personas con movilidad reducida enfrentan dificultades para
+                            orientarse, desplazarse y comunicarse. Sus familiares y cuidadores, por su parte, no siempre
+                            pueden coordinarse a tiempo.
+                        </p>
+                    </div>
+                    <div class="card">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" stroke="#108a8c" stroke-width="3"
+                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <circle cx="20" cy="20" r="15" />
+                            <circle cx="20" cy="20" r="8" />
+                            <circle cx="20" cy="20" r="2" fill="#108a8c" />
+                        </svg>
+                        <h3>Nuestra misión</h3>
+                        <p>
+                            Brindar una solución tecnológica accesible, inmediata y adaptada para facilitar una
+                            evacuación segura, reduciendo las barreras de orientación, comunicación y desplazamiento.
+                        </p>
+                    </div>
+                    <div class="card">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" stroke="#108a8c" stroke-width="3"
+                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="M2 20C8 10 14 6 20 6s12 4 18 14c-6 10-12 14-18 14S8 30 2 20z" />
+                            <circle cx="20" cy="20" r="5" />
+                        </svg>
+                        <h3>Nuestra visión</h3>
+                        <p>
+                            Ser una aplicación referente en gestión de evacuación y seguridad inclusiva, impulsando una
+                            cultura de prevención y accesibilidad.
+                        </p>
+                    </div>
+                </div>
+                <p class="team">
+                    Somos <b>NovaTeam</b>, un equipo de estudiantes de Ingeniería de Software e Ingeniería
+                    de Sistemas de Información de la UPC.
+                </p>
+            </div>
+        </div>
+
+        <section class="block wrap" id="funciones">
+            <h2>Funcionalidades Principales</h2>
+            <div class="cards">
+                <div class="card">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" stroke="#108a8c" stroke-width="3"
+                        stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M6 34h8v-8h8v-8h8v-8" />
+                        <circle cx="28" cy="10" r="6" />
+                        <path d="M24 14l8-8" />
+                    </svg>
+                    <h3>Sin escaleras</h3>
+                    <p>
+                        Evita desniveles y obstáculos arquitectónicos. Planifica rutas con rampas y ascensores
+                        operativos
+                        en tiempo real.
+                    </p>
+                </div>
+                <div class="card">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" stroke="#108a8c" stroke-width="3"
+                        stroke-linecap="round" aria-hidden="true">
+                        <rect x="14" y="4" width="12" height="20" rx="6" />
+                        <path d="M8 20a12 12 0 0 0 24 0M20 32v5M14 37h12" />
+                    </svg>
+                    <h3>Alertas de voz</h3>
+                    <p>
+                        Instrucciones de audio claras, guiadas y bidireccionales orientadas a personas con discapacidad
+                        visual o en situaciones de baja visibilidad.
+                    </p>
+                </div>
+                <div class="card">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="#108a8c" stroke="#108a8c" stroke-width="2"
+                        aria-hidden="true">
+                        <circle cx="8" cy="20" r="5" />
+                        <circle cx="30" cy="9" r="5" />
+                        <circle cx="30" cy="31" r="5" />
+                        <path d="M12 18l14-7M12 22l14 7" fill="none" stroke-width="3" />
+                    </svg>
+                    <h3>Red de Cuidadores</h3>
+                    <p>
+                        Conecta instantáneamente con familiares, brigadistas o cuidadores designados para notificar tu
+                        estado y ubicación segura.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="block wrap">
+            <h2>A quién servimos</h2>
+            <div class="cards who">
+                <div class="card">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" stroke="#108a8c" stroke-width="3"
+                        stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <circle cx="16" cy="7" r="4" fill="#108a8c" />
+                        <path d="M16 13v12h12l5 10M12 18a9 9 0 1 0 12 12" />
+                    </svg>
+                    <h3>Personas con discapacidad</h3>
+                    <p>Accesibilidad para todos los tipos de movilidad y sensorial.</p>
+                </div>
+                <div class="card">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" stroke="#108a8c" stroke-width="3"
+                        stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <circle cx="18" cy="6" r="4" fill="#108a8c" />
+                        <path d="M18 12v13M18 25l-4 11M18 25l4 11M28 14v22M24 36h8" />
+                    </svg>
+                    <h3>Mayores</h3>
+                    <p>Navegación segura y sencilla para adultos mayores.</p>
+                </div>
+                <div class="card">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" stroke="#108a8c" stroke-width="3"
+                        stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <circle cx="12" cy="6" r="4" fill="#108a8c" />
+                        <path d="M12 12v12M12 24l-4 12M12 24l4 12M20 18h14a8 8 0 0 1-8 10h-6z" />
+                        <circle cx="23" cy="34" r="2" />
+                        <circle cx="32" cy="34" r="2" />
+                    </svg>
+                    <h3>Padres con niños pequeños</h3>
+                    <p>Rutas amigables para familias en movimiento.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="commit">
+            <h2>Compromiso con la Accesibilidad</h2>
+            <p>
+                SafePath está diseñado siguiendo estrictamente los estándares internacionales WCAG 2.2, garantizando que
+                ninguna persona quede atrás.<br>Creemos en un entorno urbano seguro para todos.
+            </p>
+        </section>
+
+        <section class="faq" id="preguntas">
+            <div class="faq-wrap">
+                <h2>Preguntas frecuentes</h2>
+                <p class="faq-sub">Lo que más nos preguntan sobre SafePath.</p>
+                <details class="faq-item">
+                    <summary class="faq-q">¿En qué celulares puedo usarla?</summary>
+                    <div class="faq-a">
+                        <p>SafePath está disponible para iPhone, en App Store, y para Android, en Google Play.</p>
+                    </div>
+                </details>
+                <details class="faq-item">
+                    <summary class="faq-q">¿SafePath es gratis?</summary>
+                    <div class="faq-a">
+                        <p>
+                            Puedes descargar SafePath gratis y usar sus funciones esenciales de evacuación. También
+                            habrá
+                            versiones de pago con herramientas adicionales para quienes necesiten más apoyo.
+                        </p>
+                    </div>
+                </details>
+                <details class="faq-item">
+                    <summary class="faq-q">¿Funciona sin conexión a internet?</summary>
+                    <div class="faq-a">
+                        <p>
+                            SafePath guarda en el celular las rutas esenciales para que puedas orientarte aunque la
+                            señal
+                            falle. Las alertas y la ubicación de tu red de cuidadores sí necesitan conexión.
+                        </p>
+                    </div>
+                </details>
+                <details class="faq-item">
+                    <summary class="faq-q">¿Cómo vinculo a un familiar o cuidador?</summary>
+                    <div class="faq-a">
+                        <p>
+                            Desde la app, el adulto mayor o su familiar envía una invitación y la otra persona la
+                            acepta.
+                            Solo se comparte la ubicación cuando ambos lo autorizan.
+                        </p>
+                    </div>
+                </details>
+                <details class="faq-item">
+                    <summary class="faq-q">¿Qué pasa con mi ubicación y mis datos?</summary>
+                    <div class="faq-a">
+                        <p>
+                            Tu ubicación se comparte únicamente con las personas que tú autorizas, como tus cuidadores
+                            designados.
+                        </p>
+                    </div>
+                </details>
+                <details class="faq-item">
+                    <summary class="faq-q">¿Está disponible en cualquier ciudad?</summary>
+                    <div class="faq-a">
+                        <p>
+                            Por ahora SafePath está disponible en Perú. Algunas funciones, como las rutas dentro de
+                            edificios, dependen de que el lugar esté mapeado, y seguimos sumando más.
+                        </p>
+                    </div>
+                </details>
+            </div>
+        </section>
+
+        <section class="contact wrap" id="contacto">
+            <h2>Contacto</h2>
+            <p class="sub">¿Tienes preguntas, quieres probar SafePath con tu institución o proponer una alianza?
+                Escríbenos y te respondemos.</p>
+            <div class="contact-grid">
+                <form class="card" id="form-contacto" action="#" novalidate>
+                    <div class="row2">
+                        <div class="field">
+                            <label for="c-nombre">Nombre</label>
+                            <input class="input" id="c-nombre" name="nombre" type="text"
+                                placeholder="Tu nombre completo" autocomplete="name">
+                        </div>
+                        <div class="field">
+                            <label for="c-correo">Correo electrónico</label>
+                            <input class="input" id="c-correo" name="correo" type="email"
+                                placeholder="nombre@correo.com" autocomplete="email">
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label for="c-motivo">Motivo</label>
+                        <div class="selwrap"><select class="input" id="c-motivo" name="motivo">
+                                <option>Consulta general</option>
+                                <option>Alianza institucional</option>
+                                <option>Soporte</option>
+                            </select>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#122631"
+                                stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="M6 9l6 6 6-6" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label for="c-mensaje">Mensaje</label>
+                        <textarea class="input" id="c-mensaje" name="mensaje" maxlength="500"
+                            placeholder="Cuéntanos en qué podemos ayudarte"></textarea>
+                        <small class="contador" id="contador" aria-live="polite">0/500</small>
+                    </div>
+                    <button class="btn" type="submit">Enviar mensaje
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5"
+                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="M4 12h15M13 6l6 6-6 6" />
+                        </svg>
+                    </button>
+                </form>
+                <div class="card info">
+                    <div class="item">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#108a8c" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <rect x="3" y="5" width="18" height="14" rx="2" />
+                            <path d="M3 7l9 6 9-6" />
+                        </svg>
+                        <div>
+                            <h3>Correo del equipo</h3>
+                            <p>contacto@novateam.pe<small>Respondemos en un plazo de 15 días hábiles</small></p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#108a8c" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z" />
+                            <circle cx="12" cy="10" r="2.5" />
+                        </svg>
+                        <div>
+                            <h3>Dónde estamos</h3>
+                            <p>Av. Las Palmeras 245, Santiago de Surco <small>Lima, Perú</small></p>
+                        </div>
+                    </div>
+                    <div>
+                        <h3>Síguenos</h3>
+                        <div class="social">
+                            <a href="#" aria-label="Facebook de SafePath" style="background:#3b5998">
+                                <svg width="24" height="24" viewBox="-96 0 512 512" fill="#ffffff" aria-hidden="true">
+                                    <path
+                                        d="M80 299.3V512h116V299.3h86.5l18-97.8H196v-34.6c0-51.7 20.3-71.5 72.7-71.5 16.3 0 29.4.4 37 1.2V7.9C291.4 4 256.4 0 236.2 0 129.3 0 80 50.5 80 159.4v42.1H14v97.8z" />
+                                </svg>
+                            </a>
+                            <a href="#" aria-label="Twitter de SafePath" style="background:#00aced"><svg width="24"
+                                    height="24" viewBox="0 0 512 512" fill="#ffffff" aria-hidden="true">
+                                    <path d="M459.4 151.7c.3 4.5.3 9.1.3 13.6 0 138.7-105.6 298.6-298.6 298.6-59.5 0-114.7-17.2-161.1-47.1 8.4 1 16.6 1.3 25.3 1.3 49.1 0 94.2-16.6 130.3-44.8-46.1-1-84.8-31.2-98.1-72.8 6.5 1 13 1.6 19.8 1.6 9.4 0 18.8-1.3 27.6-3.6-48.1-9.7-84.1-52-84.1-103v-1。3c14 7。8 30。2 12。7 47。4 13。3-28。3-18。8-46。8-51-46。8-87。4 0-19。5 5。2-37。4 
+                                    <path
+                                        d=" M549.7 124.1c-6.2-23.7-24.8-42.3-48.3-48.6C458.9 64 288.1 64 288.1 64S117.3
+                                        64 74.7 75.5c-23.5 6.3-42 24.9-48.3 48.6C15 167 15 256.4 15 256.4s0 89.4 11.4
+                                        132.3c6.3 23.6 24.8 41.5 48.3 47.8C117.3 448 288.1 448 288.1 448s170.8 0
+                                        213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3
+                                        11.4-132.3s0-89.4-11.4-132.3zM232.2 337.6V175.2l142.7 81.2z" />
+                                </svg></a>
+                            <a href="#" aria-label="Instagram de SafePath" style="background:#e4405f"><svg width="24"
+                                    height="24" viewBox="-32 0 512 512" fill="#ffffff" aria-hidden="true">
+                                    <path
+                                        d="M224.3 141a115 115 0 1 0-.6 230 115 115 0 1 0 .6-230m-.6 40.4a74.6 74.6 0 1 1 .6 149.2 74.6 74.6 0 1 1-.6-149.2m93.4-45.1a26.8 26.8 0 1 1 53.6 0 26.8 26.8 0 1 1-53.6 0m129.7 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8M399 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1" />
+                                </svg></a>
+                            <a href="#" aria-label="LinkedIn de SafePath" style="background:#0077b5"><svg width="24"
+                                    height="24" viewBox="-32 -32 512 512" fill="#ffffff" aria-hidden="true">
+                                    <path
+                                        d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8c0-14.3 5.7-27.9 15.8-38S39.6 0 53.8 0s27.9 5.7 38 15.8 15.8 23.8 15.8 38c0 29.7-24.1 54.3-53.8 54.3M447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z" />
+                                </svg></a>
+                            <a href="#" aria-label="TikTok de SafePath" style="background:#fe2c55"><svg width="24"
+                                    height="24" viewBox="-32 0 512 512" fill="#ffffff" aria-hidden="true">
+                                    <path
+                                        d="M448.5 209.9c-44 .1-87-13.6-122.8-39.2v178.7c0 33.1-10.1 65.4-29 92.6s-45.6 48-76.6 59.6-64.8 13.5-96.9 5.3-60.9-25.9-82.7-50.8-35.3-56-39-88.9 2.9-66.1 18.6-95.2 40-52.7 69.6-67.7 62.9-20.5 95.7-16v89.9c-15-4.7-31.1-4.6-46 .4s-27.9 14.6-37 27.3-14 28.1-13.9 43.9 5.2 31 14.5 43.7 22.4 22.1 37.4 26.9 31.1 4.8 46-.1 28-14.4 37.2-27.1 14.2-28.1 14.2-43.8V0h88c-.1 7.4.6 14.9 1.9 22.2 3.1 16.3 9.4 31.9 18.7 45.7s21.3 25.6 35.2 34.6c19.9 13.1 43.2 20.1 67 20.1V210z" />
+                                </svg></a>
+                        </div>
+                        <p class="note">contacto@safepath.pe</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="wrap">
+            <div class="cols">
+                <div>
+                    <svg class="logo-footer" role="img" aria-label="SafePath" width="84" height="78"
+                        viewBox="22 14 84 78" xmlns="http://www.w3.org/2000/svg">
+                        <title>SafePath</title>
+                        <path
+                            d="M62 54C70 52 78 53 77 57C76 60 68 59 66.5 61C65 63 76 63.5 77 66.5C77.5 70 66 71 60 70C53 69 49 66 50.5 63C52 59 58 58 62 56Z"
+                            fill="#379974" />
+                        <path d="M64 58L52.07 44.66A16 16 0 1 1 75.93 44.66Z" fill="#379974" />
+                        <circle cx="64" cy="34" r="11.3" fill="#ffffff" />
+                        <g fill="none" stroke="#ffffff" stroke-width="1.6" stroke-linecap="round"
+                            stroke-linejoin="round">
+                            <path d="M62.3 30.5V38.5H69L71.5 43.5M62.3 33.5H67" />
+                            <path d="M58.3 35A6 6 0 1 0 67.8 41.5" />
+                        </g>
+                        <circle cx="65.2" cy="26.6" r="2.3" fill="#ffffff" />
+                        <text x="25" y="86" textLength="78" lengthAdjust="spacingAndGlyphs"
+                            font-family="Poppins,Inter,Arial,sans-serif" font-weight="700" font-size="17">
+                            <tspan fill="#ffffff">Safe</tspan>
+                            <tspan fill="#379974">Path</tspan>
+                        </text>
+                    </svg>
+                    <p class="tag">Tu camino seguro en emergencias.</p>
+                    <div class="fsocial">
+                        <a href="#" aria-label="Facebook de SafePath" style="background:#3b5998"><svg width="24"
+                                height="24" viewBox="-96 0 512 512" fill="#ffffff" aria-hidden="true">
+                                <path
+                                    d="M80 299.3V512h116V299.3h86.5l18-97.8H196v-34.6c0-51.7 20.3-71.5 72.7-71.5 16.3 0 29.4.4 37 1.2V7.9C291.4 4 256.4 0 236.2 0 129.3 0 80 50.5 80 159.4v42.1H14v97.8z" />
+                            </svg></a>
+                        <a href="#" aria-label="Twitter de SafePath" style="background:#00aced"><svg width="24"
+                                height="24" viewBox="0 0 512 512" fill="#ffffff" aria-hidden="true">
+                                <path
+                                    d="M459.4 151.7c.3 4.5.3 9.1.3 13.6 0 138.7-105.6 298.6-298.6 298.6-59.5 0-114.7-17.2-161.1-47.1 8.4 1 16.6 1.3 25.3 1.3 49.1 0 94.2-16.6 130.3-44.8-46.1-1-84.8-31.2-98.1-72.8 6.5 1 13 1.6 19.8 1.6 9.4 0 18.8-1.3 27.6-3.6-48.1-9.7-84.1-52-84.1-103v-1.3c14 7.8 30.2 12.7 47.4 13.3-28.3-18.8-46.8-51-46.8-87.4 0-19.5 5.2-37.4 14.3-53C87.4 130.8 165 172.4 252.1 176.9c-1.6-7.8-2.6-15.9-2.6-24C249.5 95.1 296.3 48 354.4 48c30.2 0 57.5 12.7 76.7 33.1 23.7-4.5 46.5-13.3 66.6-25.3-7.8 24.4-24.4 44.8-46.1 57.8 21.1-2.3 41.6-8.1 60.4-16.2-14.3 20.8-32.2 39.3-52.6 54.3" />
+                            </svg></a>
+                        <a href="#" aria-label="YouTube de SafePath" style="background:#bb0000"><svg width="24"
+                                height="24" viewBox="0 -32 576 576" fill="#ffffff" aria-hidden="true">
+                                <path
+                                    d="M549.7 124.1c-6.2-23.7-24.8-42.3-48.3-48.6C458.9 64 288.1 64 288.1 64S117.3 64 74.7 75.5c-23.5 6.3-42 24.9-48.3 48.6C15 167 15 256.4 15 256.4s0 89.4 11.4 132.3c6.3 23.6 24.8 41.5 48.3 47.8C117.3 448 288.1 448 288.1 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3zM232.2 337.6V175.2l142.7 81.2z" />
+                            </svg></a>
+                        <a href="#" aria-label="Instagram de SafePath" style="background:#e4405f"><svg width="24"
+                                height="24" viewBox="-32 0 512 512" fill="#ffffff" aria-hidden="true">
+                                <path
+                                    d="M224.3 141a115 115 0 1 0-.6 230 115 115 0 1 0 .6-230m-.6 40.4a74.6 74.6 0 1 1 .6 149.2 74.6 74.6 0 1 1-.6-149.2m93.4-45.1a26.8 26.8 0 1 1 53.6 0 26.8 26.8 0 1 1-53.6 0m129.7 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8M399 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1" />
+                            </svg></a>
+                        <a href="#" aria-label="LinkedIn de SafePath" style="background:#0077b5"><svg width="24"
+                                height="24" viewBox="-32 -32 512 512" fill="#ffffff" aria-hidden="true">
+                                <path
+                                    d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8c0-14.3 5.7-27.9 15.8-38S39.6 0 53.8 0s27.9 5.7 38 15.8 15.8 23.8 15.8 38c0 29.7-24.1 54.3-53.8 54.3M447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z" />
+                            </svg></a>
+                        <a href="#" aria-label="TikTok de SafePath" style="background:#fe2c55"><svg width="24"
+                                height="24" viewBox="-32 0 512 512" fill="#ffffff" aria-hidden="true">
+                                <path
+                                    d="M448.5 209.9c-44 .1-87-13.6-122.8-39.2v178.7c0 33.1-10.1 65.4-29 92.6s-45.6 48-76.6 59.6-64.8 13.5-96.9 5.3-60.9-25.9-82.7-50.8-35.3-56-39-88.9 2.9-66.1 18.6-95.2 40-52.7 69.6-67.7 62.9-20.5 95.7-16v89.9c-15-4.7-31.1-4.6-46 .4s-27.9 14.6-37 27.3-14 28.1-13.9 43.9 5.2 31 14.5 43.7 22.4 22.1 37.4 26.9 31.1 4.8 46-.1 28-14.4 37.2-27.1 14.2-28.1 14.2-43.8V0h88c-.1 7.4.6 14.9 1.9 22.2 3.1 16.3 9.4 31.9 18.7 45.7s21.3 25.6 35.2 34.6c19.9 13.1 43.2 20.1 67 20.1V210z" />
+                            </svg></a>
+                    </div>
+                </div>
+                <nav aria-label="Enlaces del pie de página">
+                    <h4>Enlaces</h4>
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#sobre">Sobre SafePath</a></li>
+                        <li><a href="#funciones">Funcionalidades</a></li>
+                        <li><a href="#preguntas">Preguntas frecuentes</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </nav>
+                <div>
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Política de Privacidad</a></li>
+                        <li><a href="#">Términos de uso</a></li>
+                    </ul>
+                </div>
+            </div>
+            <p class="copy">© 2026 SafePath - NovaTeam. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <a href="#inicio" class="subir" id="subir" aria-label="Volver arriba" hidden>
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.6"
+            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M12 19V5M5 12l7-7 7 7" />
+        </svg>
+    </a>
+
+    <div class="modal" id="aviso" role="dialog" aria-modal="true" aria-labelledby="aviso-titulo" hidden>
+        <div class="aviso">
+            <div class="aviso-icono"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#108a8c"
+                    stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M5 12.5l4.5 4.5L19 7.5" />
+                </svg></div>
+            <h2 id="aviso-titulo">¡Mensaje enviado!</h2>
+            <p>Gracias por escribirnos. Te responderemos en un plazo de [X] días hábiles.</p>
+            <button class="btn" type="button" id="aviso-cerrar">Cerrar</button>
+        </div>
+    </div>
+    <script type="module" src="assets/scripts/main.js"></script>
+</body>
+
+</html>
